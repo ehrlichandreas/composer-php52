@@ -10,21 +10,29 @@ In your project's `composer.json`, add the following lines:
 
     :::json
     {
+        "repositories":
+        [
+            {
+                "type": "git",
+                "url": "https://github.com/ehrlichandreas/composer-php52.git"
+            }
+        ],
+        "require":
         {
-            "type": "git",
-            "url": "https://github.com/ehrlichandreas/composer-php52.git"
-        },
-        "require": {
             "ehrlichandreas/composer-php52": "1.*"
         },
-        "scripts": {
-            "post-install-cmd": [
+        "scripts":
+        {
+            "post-install-cmd":
+            [
                 "xrstf\\Composer52\\Generator::onPostInstallCmd"
             ],
-            "post-update-cmd": [
+            "post-update-cmd":
+            [
                 "xrstf\\Composer52\\Generator::onPostInstallCmd"
             ],
-            "post-autoload-dump": [
+            "post-autoload-dump":
+            [
                 "xrstf\\Composer52\\Generator::onPostInstallCmd"
             ]
         }
