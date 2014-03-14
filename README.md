@@ -10,8 +10,12 @@ In your project's `composer.json`, add the following lines:
 
     :::json
     {
+        {
+            "type": "git",
+            "url": "https://github.com/ehrlichandreas/composer-php52.git"
+        },
         "require": {
-            "xrstf/composer-php52": "1.*"
+            "ehrlichandreas/composer-php52": "1.*"
         },
         "scripts": {
             "post-install-cmd": [
