@@ -19,7 +19,7 @@ In your project's `composer.json`, add the following lines:
         ],
         "require":
         {
-            "ehrlichandreas/composer-php52": "1.*"
+            "ehrlichandreas/composer-php52": "*"
         },
         "scripts":
         {
