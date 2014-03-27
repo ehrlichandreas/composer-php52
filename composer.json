@@ -18,10 +18,5 @@
         "post-update-cmd": [
             "xrstf\\Composer52\\Generator::onPostInstallCmd"
         ]
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-default": "1.x-dev"
-        }
     }
 }
