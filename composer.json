@@ -2,20 +2,29 @@
     "name": "ehrlichandreas/composer-php52",
     "license": "MIT",
     "homepage": "http://www.xrstf.de/",
-    "support": {
+    "support":
+    {
         "source": "https://bitbucket.org/xrstf/composer-php52",
         "issues": "https://bitbucket.org/xrstf/composer-php52/issues"
     },
-    "autoload": {
-        "psr-0": {
+    "autoload":
+    {
+        "psr-0":
+        {
             "xrstf\\Composer52": "lib/"
         }
     },
     "scripts": {
-        "post-install-cmd": [
+        "post-install-cmd":
+        [
             "xrstf\\Composer52\\Generator::onPostInstallCmd"
         ],
-        "post-update-cmd": [
+        "post-update-cmd":
+        [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-autoload-dump":
+        [
             "xrstf\\Composer52\\Generator::onPostInstallCmd"
         ]
     }
